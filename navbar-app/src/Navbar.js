@@ -31,8 +31,15 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
-        <div>
-          
+        <div className='links-container' ref={linksContainerRef}>
+          <ul className='links' ref={linksRef}>
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                
+              )
+            })}
+          </ul>
         </div>
       </div>
     </nav>)
