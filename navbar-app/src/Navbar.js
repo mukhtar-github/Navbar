@@ -20,9 +20,19 @@ const Navbar = () => {
     } else {
       linksContainerRef.current.style.height = '0px';
     }
-  });
+  }, [showLinks]);
 
-  return <h4>navbar</h4>
+  return (
+    <nav>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <img src={logo} className='logo' alt='logo' />
+          <button className='nav-toggle' onClick={toggleLinks}>
+
+          </button>
+        </div>
+      </div>
+    </nav>)
 }
 
 export default Navbar
