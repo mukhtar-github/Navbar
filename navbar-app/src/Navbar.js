@@ -36,9 +36,14 @@ const Navbar = () => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
-                
-              )
+                <li key={id}>
+                  <a href={url}>{icon}</a>
+                </li>
+              );
             })}
+          </ul>
+          <ul>
+            
           </ul>
         </div>
       </div>
