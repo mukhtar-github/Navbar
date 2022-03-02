@@ -37,7 +37,7 @@ const Navbar = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{icon}</a>
+                  <a href={url}>{text}</a>
                 </li>
               );
             })}
